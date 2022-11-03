@@ -18,6 +18,11 @@ namespace Article_Website.Controllers
             return View();
         }
 
+        public IActionResult Articles()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
