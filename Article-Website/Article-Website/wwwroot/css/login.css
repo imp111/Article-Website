@@ -22,5 +22,55 @@ body {
 
 .container .form {
     padding: 30px;
+}
 
+.container .form .title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container .form .input-field {
+    background-color: red;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.container .form .input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.container .form .input-field input:is(:focus, :valid) {
+    border-bottom-color: #4070f4;
+}
+
+.container .form .input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.container .form .input-field input:is(:focus, :valid) ~ i {
+    color: #4070f4;
+}
+
+.container .form .input-field i.emailIcon {
+    left: 0;
+}
+
+.container .form .input-field i.showHideButton {
+    right: 0;
 }
