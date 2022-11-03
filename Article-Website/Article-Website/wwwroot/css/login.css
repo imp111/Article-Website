@@ -74,3 +74,10 @@ body {
 .container .form .input-field i.showHideButton {
     right: 0;
 }
+
+.container .form .checkbox-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
