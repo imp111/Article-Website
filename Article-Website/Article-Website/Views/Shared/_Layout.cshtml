@@ -34,20 +34,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" id="userOptions">
-                    <ul  class="navbar-nav flex-grow-1">
-                        <li class="nav-item" id="loginButton">
-                            <div class="oval" id="login">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Index">Sign In</a>
-                            </div>
-
-                        </li>
-                        <li class="nav-item" id="registerButton">
-                            <div class="oval" id="register">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Register" asp-action="Index">Sign Up</a>
-                            </div>
-                        </li>
-                    </ul>
+                
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a class="btn btn-light me-md-2" type="button" asp-area="" asp-controller="Login" asp-action="Index">Login</a>
+                    <a class="btn btn-primary" type="button" asp-area="" asp-controller="Register" asp-action="Index">Register</a>
                 </div>
             </div>
         </nav>
@@ -61,7 +51,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="footer">
-            &copy; 2022 - Article_Website - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2022 - Article_Website - <a asp-area="" asp-controller="Home" asp-action="Index">Privacy</a>
         </div>
     </footer>
 
